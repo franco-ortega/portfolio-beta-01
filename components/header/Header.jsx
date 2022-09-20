@@ -1,10 +1,11 @@
+import Nav from '../nav/Nav';
 import styles from './Header.module.scss';
 
 const Header = () => {
   return (
     <header className={styles.Header}>
-      Header
-      <nav>Nav</nav>
+      Franco Ortega - Software Engineer
+      <Nav />
     </header>
   );
 };
