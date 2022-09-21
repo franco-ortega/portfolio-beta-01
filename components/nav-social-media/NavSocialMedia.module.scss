@@ -47,13 +47,16 @@
     ul {
       flex-direction: column;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1rem;
+
+      transition: all 500ms ease;
 
       li {
-        transition: transform 500ms ease;
+        transition: all 500ms ease;
 
         &:hover {
-          transform: scale(120%, 120%);
+          margin-top: 0.5rem;
+          transform: scale(115%, 115%);
         }
       }
 
@@ -62,9 +65,9 @@
       }
 
       @include icon-dialog(1, 'GitHub', -65%, -35%);
-      @include icon-dialog(2, 'LinkedIn', -58%, -55%);
+      @include icon-dialog(2, 'LinkedIn', -60%, -55%);
       @include icon-dialog(3, 'Twitter', -55%, -35%);
-      @include icon-dialog(4, 'Instagram', -63%, -80%);
+      @include icon-dialog(4, 'Instagram', -65%, -80%);
 
       li:nth-child(1):hover::before,
       li:nth-child(2):hover::before,
