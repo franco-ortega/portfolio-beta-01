@@ -9,10 +9,11 @@
   --landing-name-text: 2.5rem;
   --landing-title-text: 1.75rem;
   --landing-button-text: 1rem;
-  --nav-link-font: 'Bandar', sans-serif;
+  --nav-link-font: 'Salma Pro', sans-serif;
   --nav-link-text: 1.25rem;
   --nav-line-height: 1.25rem;
   --nav-list-padding: 0.25rem;
+  --primary-text: 'Salma Pro', sans-serif;
 }
 
 html,
@@ -42,36 +43,15 @@ a {
 }
 
 @font-face {
-  font-family: 'Bandar';
-  src: url('../fonts/bandar-font/Bandar.ttf');
+  font-family: 'Salma Pro';
+  src: url('../fonts/salma-pro-font/SalmaproMedium.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Bandar Bold';
-  src: url('../fonts/bandar-font/BandarBold.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bandar Italic';
-  src: url('../fonts/bandar-font/BandarItalic.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bandar Bold Italic';
-  src: url('../fonts/bandar-font/BandarBoldItalic.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bandar Outline';
-  src: url('../fonts/bandar-font/BandarOutline.ttf');
+  font-family: 'Salma Pro Narrow';
+  src: url('../fonts/salma-pro-font/SalmaproMediumNarrow.otf');
   font-weight: normal;
   font-style: normal;
 }
