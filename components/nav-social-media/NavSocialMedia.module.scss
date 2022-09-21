@@ -1,5 +1,6 @@
-.Nav {
-  background-color: blanchedalmond;
+.NavSocialMedia {
+  background-color: lightseagreen;
+
   padding: 0.25rem;
 
   ul {
@@ -9,18 +10,19 @@
     justify-content: center;
     gap: 1rem;
 
+    background-color: lightgoldenrodyellow;
     padding: 0.25rem;
-
-    background-color: lightslategray;
 
     li {
       font-size: 1.25rem;
+      line-height: 1.25rem;
 
-      background-color: lightblue;
+      background-color: lightgray;
     }
   }
 
   @media (min-width: 500px) {
+    display: block;
     ul {
       flex-direction: column;
     }

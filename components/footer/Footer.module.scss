@@ -1,6 +1,28 @@
 .Footer {
   background-color: lightpink;
+
+  padding: 0.5rem;
+
   position: absolute;
   bottom: 0;
   width: 100%;
+
+  ul {
+    // margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+    li {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (min-width: 500px) {
+    display: none;
+    // ul {
+    //   flex-direction: column;
+    // }
+  }
 }

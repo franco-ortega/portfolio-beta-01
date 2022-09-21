@@ -1,3 +1,20 @@
 .Home {
   background-color: hsl(39, 100%, 50%, 0.25);
+  width: clamp(5rem, 80%, 40rem);
+  margin: auto;
+  padding: 0.5rem;
+
+  & div {
+    outline: lightcyan solid 1px;
+    margin-block: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+
+    p {
+      background-color: aqua;
+      width: fit-content;
+      flex-basis: 45%;
+    }
+  }
 }
