@@ -9,8 +9,6 @@ import {
 import styles from './NavSocialMedia.module.scss';
 
 const NavSocialMedia = () => {
-  const iconColor = 'lightblue';
-
   return (
     <nav className={styles.NavSocialMedia}>
       <ul>
@@ -20,10 +18,7 @@ const NavSocialMedia = () => {
             rel='noreferrer'
             target='_blank'
           >
-            <FontAwesomeIcon
-              icon={faGithub}
-              style={{ fontSize: 30, color: iconColor }}
-            />
+            <FontAwesomeIcon icon={faGithub} style={{ fontSize: 30 }} />
           </a>
         </li>
         <li>
@@ -32,10 +27,7 @@ const NavSocialMedia = () => {
             rel='noreferrer'
             target='_blank'
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              style={{ fontSize: 30, color: iconColor }}
-            />
+            <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 30 }} />
           </a>
         </li>
         <li>
@@ -44,10 +36,7 @@ const NavSocialMedia = () => {
             rel='noreferrer'
             target='_blank'
           >
-            <FontAwesomeIcon
-              icon={faTwitter}
-              style={{ fontSize: 30, color: iconColor }}
-            />
+            <FontAwesomeIcon icon={faTwitter} style={{ fontSize: 30 }} />
           </a>
         </li>
         <li>
@@ -56,10 +45,7 @@ const NavSocialMedia = () => {
             rel='noreferrer'
             target='_blank'
           >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              style={{ fontSize: 30, color: iconColor }}
-            />
+            <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 30 }} />
           </a>
         </li>
       </ul>
