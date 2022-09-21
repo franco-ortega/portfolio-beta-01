@@ -1,6 +1,16 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {} from '@fortawesome/free-solid-svg-icons';
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faInstagram
+} from '@fortawesome/free-brands-svg-icons';
 import styles from './NavSocialMedia.module.scss';
 
 const NavSocialMedia = () => {
+  const iconColor = 'lightblue';
+
   return (
     <nav className={styles.NavSocialMedia}>
       <ul>
@@ -10,7 +20,10 @@ const NavSocialMedia = () => {
             rel='noreferrer'
             target='_blank'
           >
-            GitHub
+            <FontAwesomeIcon
+              icon={faGithub}
+              style={{ fontSize: 30, color: iconColor }}
+            />
           </a>
         </li>
         <li>
@@ -19,7 +32,10 @@ const NavSocialMedia = () => {
             rel='noreferrer'
             target='_blank'
           >
-            LinkedIn
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              style={{ fontSize: 30, color: iconColor }}
+            />
           </a>
         </li>
         <li>
@@ -28,7 +44,10 @@ const NavSocialMedia = () => {
             rel='noreferrer'
             target='_blank'
           >
-            Twitter
+            <FontAwesomeIcon
+              icon={faTwitter}
+              style={{ fontSize: 30, color: iconColor }}
+            />
           </a>
         </li>
         <li>
@@ -37,7 +56,10 @@ const NavSocialMedia = () => {
             rel='noreferrer'
             target='_blank'
           >
-            Instagram
+            <FontAwesomeIcon
+              icon={faInstagram}
+              style={{ fontSize: 30, color: iconColor }}
+            />
           </a>
         </li>
       </ul>
