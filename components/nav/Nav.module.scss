@@ -5,6 +5,8 @@
   padding: 0.25rem;
 
   ul {
+    font-family: var(--nav-link-font);
+
     display: flex;
     flex-direction: row;
     justify-content: center;
