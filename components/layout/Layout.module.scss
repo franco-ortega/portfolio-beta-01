@@ -1,10 +1,22 @@
 .Layout {
-  // background-color: lightblue;
   background-color: hsl(0, 0%, 95%);
   min-height: 100vh;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: fadeIn 1000ms ease forwards;
+  }
 
   @media (min-width: 500px) {
     display: flex;
     flex-direction: row;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
   }
 }
