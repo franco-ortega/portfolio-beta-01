@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (prefers-reduced-motion: no-preference) {
+  @include motion-allowed() {
     animation: fadeIn 1000ms ease forwards;
   }
 

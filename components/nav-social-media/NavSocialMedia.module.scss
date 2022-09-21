@@ -20,7 +20,7 @@
     }
   }
 
-  @media (prefers-reduced-motion: no-preference) {
+  @include motion-allowed() {
     ul {
       animation: slideUp 1000ms ease forwards;
     }

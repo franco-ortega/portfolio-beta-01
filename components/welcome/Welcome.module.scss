@@ -70,7 +70,8 @@
     }
   }
 }
-@media (prefers-reduced-motion: no-preference) {
+
+@include motion-allowed() {
   .FadeOut {
     opacity: 0%;
   }
