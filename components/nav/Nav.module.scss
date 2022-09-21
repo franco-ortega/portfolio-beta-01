@@ -1,19 +1,26 @@
 .Nav {
   background-color: blanchedalmond;
+  padding: 0.25rem;
 
   ul {
-    margin-top: 0.5rem;
+    // margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
 
+    padding: 0.25rem;
+
+    background-color: lightslategray;
+
     li {
       font-size: 1.25rem;
+
+      background-color: lightblue;
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 500px) {
     ul {
       flex-direction: column;
     }

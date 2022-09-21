@@ -1,21 +1,27 @@
 .NavSocialMedia {
   background-color: lightseagreen;
 
-  display: none;
+  padding: 0.25rem;
 
   ul {
-    margin-top: 0.5rem;
+    // margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
 
+    background-color: lightgoldenrodyellow;
+    padding: 0.25rem;
+
     li {
       font-size: 1.25rem;
+      line-height: 1.25rem;
+
+      background-color: lightgray;
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 500px) {
     display: block;
     ul {
       flex-direction: column;

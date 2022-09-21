@@ -1,12 +1,12 @@
-import NavSocialMedia from '../nav-social-media/NavSocialMedia';
+import Header from '../header/Header';
 import Nav from '../nav/Nav';
+import NavSocialMedia from '../nav-social-media/NavSocialMedia';
 import styles from './Sidebar.module.scss';
 
 const Sidebar = () => {
   return (
     <div className={styles.Sidebar}>
-      <h1>Franco Ortega</h1>
-      <h2>Software Engineer</h2>
+      <Header />
       <Nav />
       <NavSocialMedia />
     </div>

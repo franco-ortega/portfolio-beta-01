@@ -1,22 +1,11 @@
 .Sidebar {
   background-color: lightgreen;
 
-  padding: 1rem;
+  padding: 0.5rem;
 
-  h1,
-  h2 {
-    // background-color: hsl(350, 100%, 88%, 0.75);
-    width: fit-content;
-    margin-inline: auto;
-    margin-bottom: 0.25rem;
-  }
-
-  h1 {
-    font-size: 2.25rem;
-  }
-
-  h2 {
-    font-size: 1.75rem;
+  // hide social media nav in sidebar on mobile
+  nav:not(:nth-child(2)) {
+    display: none;
   }
 
   @media (min-width: 500px) {
@@ -24,11 +13,19 @@
     flex-direction: column;
     justify-content: space-between;
 
-    // flex-shrink: 0;
-
     h1,
     h2 {
       display: none;
+    }
+
+    // hide header in sidebar on desktop
+    header {
+      display: none;
+    }
+
+    // display social media nav in sidebar on desktop
+    nav:not(:nth-child(2)) {
+      display: block;
     }
   }
 }
