@@ -14,6 +14,7 @@ const NavSocialMedia = () => {
       <ul>
         <li>
           <a
+            title='GitHub'
             href='https://github.com/franco-ortega'
             rel='noreferrer'
             target='_blank'
@@ -23,6 +24,7 @@ const NavSocialMedia = () => {
         </li>
         <li>
           <a
+            title='LinkedIn'
             href='https://www.linkedin.com/in/francoortega/'
             rel='noreferrer'
             target='_blank'
@@ -32,6 +34,7 @@ const NavSocialMedia = () => {
         </li>
         <li>
           <a
+            title='Twitter'
             href='https://twitter.com/FrancoOrtegaDev'
             rel='noreferrer'
             target='_blank'
@@ -41,6 +44,7 @@ const NavSocialMedia = () => {
         </li>
         <li>
           <a
+            title='Instagram'
             href='https://www.instagram.com/reefwoodcartography/'
             rel='noreferrer'
             target='_blank'
