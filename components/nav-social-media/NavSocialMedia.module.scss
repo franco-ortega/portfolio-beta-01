@@ -24,11 +24,6 @@
 
       // background-color: lightgray;
     }
-
-    @include icon-dialog-reduced-motion(1, 'GitHub', -70%, -35%);
-    @include icon-dialog-reduced-motion(2, 'LinkedIn', -70%, -55%);
-    @include icon-dialog-reduced-motion(3, 'Twitter', -65%, -35%);
-    @include icon-dialog-reduced-motion(4, 'Instagram', -75%, -80%);
   }
 
   @include media-query(tablet) {
@@ -36,6 +31,11 @@
       flex-direction: column;
       align-items: center;
       gap: 2.25rem;
+
+      @include icon-dialog-reduced-motion(1, 'GitHub', -70%, -35%);
+      @include icon-dialog-reduced-motion(2, 'LinkedIn', -70%, -55%);
+      @include icon-dialog-reduced-motion(3, 'Twitter', -65%, -35%);
+      @include icon-dialog-reduced-motion(4, 'Instagram', -75%, -80%);
     }
   }
 
