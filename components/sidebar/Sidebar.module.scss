@@ -1,12 +1,7 @@
 .Sidebar {
-  background-color: lightgreen;
+  background-color: hsl(0, 0%, 85%);
 
   padding: 0.5rem;
-
-  // hide social media nav in sidebar on mobile
-  nav:not(:nth-child(2)) {
-    display: none;
-  }
 
   @media (min-width: 500px) {
     display: flex;
@@ -16,16 +11,6 @@
     h1,
     h2 {
       display: none;
-    }
-
-    // hide header in sidebar on desktop
-    header {
-      display: none;
-    }
-
-    // display social media nav in sidebar on desktop
-    nav:not(:nth-child(2)) {
-      display: block;
     }
   }
 }
