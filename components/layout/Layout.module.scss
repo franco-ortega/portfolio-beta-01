@@ -2,5 +2,12 @@
   background-color: lightblue;
   min-height: 100vh;
 
+  // padding: 1rem;
+
   // position: relative;
+
+  @media (min-width: 500px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
