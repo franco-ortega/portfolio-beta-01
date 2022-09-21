@@ -1,8 +1,8 @@
 import styles from './Welcome.module.scss';
 
-const Welcome = ({ onWelcomeClick }) => {
+const Welcome = ({ fadeOut, onWelcomeClick }) => {
   return (
-    <div className={styles.Welcome}>
+    <div className={`${styles.Welcome} ${fadeOut && styles.FadeOut}`}>
       <main>
         <section>
           <div>

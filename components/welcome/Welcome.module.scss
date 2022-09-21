@@ -6,6 +6,8 @@
   grid-template-rows: repeat(3, 1fr);
   justify-items: center;
 
+  transition: opacity 1000ms ease;
+
   main {
     border-radius: 10rem;
     box-shadow: 0.3rem 0.3rem 0 0.3rem hsl(350, 100%, 88%);
@@ -64,5 +66,10 @@
     main {
       grid-column: 2 /3;
     }
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .FadeOut {
+    opacity: 0%;
   }
 }
