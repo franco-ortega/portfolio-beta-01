@@ -1,11 +1,17 @@
 import styles from './Welcome.module.scss';
 
-const Welcome = () => {
+const Welcome = ({ onWelcomeClick }) => {
   return (
     <div className={styles.Welcome}>
-      <h1>Franco Ortega</h1>
-      <h2>Software Engineer</h2>
-      <button onClick={onWelcomeClick}>Welcome</button>
+      <main>
+        <section>
+          <div>
+            <h1>Franco Ortega</h1>
+            <h2>Software Engineer</h2>
+          </div>
+          <button onClick={onWelcomeClick}>Welcome</button>
+        </section>
+      </main>
     </div>
   );
 };

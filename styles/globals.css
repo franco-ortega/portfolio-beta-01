@@ -17,6 +17,20 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'Vegan Style';
+  src: url('../fonts/VeganStylePersonalUse-5Y58.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vegan Style Bold';
+  src: url('../fonts/VeganStylePersonalUse-5Y58.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   /* html {
     color-scheme: dark;

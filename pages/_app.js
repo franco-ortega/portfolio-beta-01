@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Layout from '../components/layout/Layout';
 import LayoutInner from '../components/layoutInner/LayoutInner';
+import Welcome from '../components/welcome/Welcome';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -10,14 +11,7 @@ function MyApp({ Component, pageProps }) {
     setHome(true);
   };
 
-  if (!home)
-    return (
-      <div>
-        <h1>Franco Ortega</h1>
-        <h2>Software Engineer</h2>
-        <button onClick={onWelcomeClick}>Welcome</button>
-      </div>
-    );
+  if (!home) return <Welcome onWelcomeClick={onWelcomeClick} />;
 
   return (
     <Layout>
