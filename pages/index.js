@@ -1,7 +1,5 @@
-export default function Home() {
-  return (
-    <div>
-      <main>Boop</main>
-    </div>
-  );
+import Home from '../components/home/Home';
+
+export default function HomePage() {
+  return <Home />;
 }
