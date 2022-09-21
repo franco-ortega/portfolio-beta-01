@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }) {
   const [home, setHome] = useState(false);
 
   const onWelcomeClick = () => {
-    console.log('welcome!!');
     setHome(true);
   };
 
