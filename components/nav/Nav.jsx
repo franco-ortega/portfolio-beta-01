@@ -3,10 +3,12 @@ import styles from './Nav.module.scss';
 const Nav = () => {
   return (
     <nav className={styles.Nav}>
-      <span>Home</span>
-      <span> - Projects</span>
-      <span> - About</span>
-      <span> - Resume</span>
+      <ul>
+        <li>Home</li>
+        <li>Projects</li>
+        <li>About</li>
+        <li>Resume</li>
+      </ul>
     </nav>
   );
 };
