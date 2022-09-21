@@ -3,14 +3,20 @@
 
   padding: 0.5rem;
 
+  // hide social media nav in sidebar on mobile
+  nav:not(:nth-child(1)) {
+    display: none;
+  }
+
   @media (min-width: 500px) {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    h1,
-    h2 {
-      display: none;
+    // display social media nav in sidebar on desktop
+    nav:not(:nth-child(1)) {
+      display: block;
     }
   }
 }

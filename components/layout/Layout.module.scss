@@ -2,6 +2,10 @@
   background-color: hsl(0, 0%, 95%);
   min-height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   @media (prefers-reduced-motion: no-preference) {
     animation: fadeIn 1000ms ease forwards;
   }
@@ -9,6 +13,7 @@
   @media (min-width: 500px) {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 }
 
