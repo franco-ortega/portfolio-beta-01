@@ -15,3 +15,14 @@
     left: $left;
   }
 }
+
+@mixin icon-dialog-reduced-motion($item, $title, $top, $left) {
+  li:nth-child(#{$item}):before {
+    content: $title;
+    font-size: 1rem;
+
+    position: absolute;
+    top: $top;
+    left: $left;
+  }
+}

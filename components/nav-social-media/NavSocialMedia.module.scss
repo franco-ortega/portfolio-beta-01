@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    // gap: 1rem;
 
     // background-color: lightgoldenrodyellow;
     padding: var(--nav-list-padding);
@@ -25,10 +24,24 @@
 
       // background-color: lightgray;
     }
+
+    @include icon-dialog-reduced-motion(1, 'GitHub', -70%, -35%);
+    @include icon-dialog-reduced-motion(2, 'LinkedIn', -70%, -55%);
+    @include icon-dialog-reduced-motion(3, 'Twitter', -65%, -35%);
+    @include icon-dialog-reduced-motion(4, 'Instagram', -75%, -80%);
+  }
+
+  @include media-query(tablet) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 2.25rem;
+    }
   }
 
   @include motion-allowed() {
     ul {
+      gap: 1rem;
       animation: slideUp 1000ms ease forwards;
     }
 
@@ -41,39 +54,33 @@
         transform: translateY(0%);
       }
     }
-  }
 
-  @include media-query(tablet) {
-    ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
+    @include media-query(tablet) {
+      ul {
+        li {
+          transition: all 500ms ease;
 
-      transition: all 500ms ease;
-
-      li {
-        transition: all 500ms ease;
-
-        &:hover {
-          margin-top: 0.5rem;
-          transform: scale(115%, 115%);
+          &:hover {
+            margin-top: 0.5rem;
+            transform: scale(115%, 115%);
+          }
         }
-      }
 
-      li:before {
-        transition: opacity 750ms ease;
-      }
+        li:before {
+          transition: opacity 750ms ease;
+        }
 
-      @include icon-dialog(1, 'GitHub', -65%, -35%);
-      @include icon-dialog(2, 'LinkedIn', -60%, -55%);
-      @include icon-dialog(3, 'Twitter', -55%, -35%);
-      @include icon-dialog(4, 'Instagram', -65%, -80%);
+        @include icon-dialog(1, 'GitHub', -65%, -35%);
+        @include icon-dialog(2, 'LinkedIn', -60%, -55%);
+        @include icon-dialog(3, 'Twitter', -55%, -35%);
+        @include icon-dialog(4, 'Instagram', -65%, -80%);
 
-      li:nth-child(1):hover::before,
-      li:nth-child(2):hover::before,
-      li:nth-child(3):hover::before,
-      li:nth-child(4):hover::before {
-        opacity: 1;
+        li:nth-child(1):hover::before,
+        li:nth-child(2):hover::before,
+        li:nth-child(3):hover::before,
+        li:nth-child(4):hover::before {
+          opacity: 1;
+        }
       }
     }
   }
