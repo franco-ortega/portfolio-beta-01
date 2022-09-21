@@ -10,11 +10,11 @@
     gap: 1rem;
 
     // background-color: lightgoldenrodyellow;
-    padding: 0.25rem;
+    padding: var(--nav-list-padding);
 
     li {
-      font-size: 1.25rem;
-      line-height: 1.25rem;
+      font-size: var(--nav-link-text);
+      line-height: var(--nav-line-height);
 
       // background-color: lightgray;
     }

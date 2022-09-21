@@ -5,6 +5,15 @@
   list-style-type: none;
 }
 
+:root {
+  --landing-name-text: 2.5rem;
+  --landing-title-text: 1.75rem;
+  --landing-button-text: 1rem;
+  --nav-link-text: 1.25rem;
+  --nav-line-height: 1.25rem;
+  --nav-list-padding: 0.25rem;
+}
+
 html,
 body {
   font-family: sans-serif;
