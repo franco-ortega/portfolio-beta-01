@@ -1,0 +1,30 @@
+.Sidebar {
+  background-color: lightgreen;
+
+  padding: 1rem;
+
+  h1,
+  h2 {
+    // background-color: hsl(350, 100%, 88%, 0.75);
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 0.25rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  @media (min-width: 500px) {
+    flex-shrink: 0;
+
+    h1,
+    h2 {
+      display: none;
+    }
+  }
+}
