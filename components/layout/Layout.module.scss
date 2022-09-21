@@ -1,0 +1,13 @@
+.Layout {
+  background-color: lightblue;
+  min-height: 100vh;
+
+  // padding: 1rem;
+
+  // position: relative;
+
+  @media (min-width: 800px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
