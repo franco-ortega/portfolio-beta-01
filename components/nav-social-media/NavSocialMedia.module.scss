@@ -1,10 +1,9 @@
-.NavSocialMedia {
-  // background-color: lightseagreen;
+@use '../../styles/scss/' as *;
 
+.NavSocialMedia {
   padding: 0.25rem;
 
   ul {
-    // margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,8 +26,7 @@
     }
   }
 
-  @media (min-width: 500px) {
-    display: block;
+  @include media-query(tablet) {
     ul {
       flex-direction: column;
     }
