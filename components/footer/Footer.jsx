@@ -4,10 +4,12 @@ const Footer = () => {
   return (
     <footer className={styles.Footer}>
       <nav>
-        <span>GitHub</span>
-        <span> - LinkedIn</span>
-        <span> - Twitter</span>
-        <span> - Instagram</span>
+        <ul>
+          <li>GitHub</li>
+          <li>LinkedIn</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+        </ul>
       </nav>
     </footer>
   );

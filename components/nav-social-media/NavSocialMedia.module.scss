@@ -1,5 +1,7 @@
-.Nav {
-  background-color: blanchedalmond;
+.NavSocialMedia {
+  background-color: lightseagreen;
+
+  display: none;
 
   ul {
     margin-top: 0.5rem;
@@ -14,6 +16,7 @@
   }
 
   @media (min-width: 800px) {
+    display: block;
     ul {
       flex-direction: column;
     }
