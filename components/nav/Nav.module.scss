@@ -7,6 +7,7 @@
   ul {
     color: var(--nav-text-color);
     font-family: var(--nav-link-font);
+    text-align: center;
 
     display: flex;
     flex-direction: row;
@@ -21,7 +22,7 @@
       font-size: var(--nav-link-text);
       line-height: var(--nav-line-height);
 
-      // background-color: lightblue;
+      // background-color: red;
     }
   }
 
@@ -44,6 +45,14 @@
   @include media-query(tablet) {
     ul {
       flex-direction: column;
+
+      li {
+        transition: transform 500ms ease;
+
+        &:hover {
+          transform: scale(120%, 120%);
+        }
+      }
     }
   }
 }
