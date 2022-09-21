@@ -1,20 +1,50 @@
+@use '../../styles/scss/' as *;
+
 .Home {
-  background-color: hsl(39, 100%, 50%, 0.25);
-  width: clamp(5rem, 80%, 40rem);
+  background-color: hsl(39, 100%, 90%, 0.5);
+  border-radius: 0.25rem;
   margin: auto;
-  padding: 0.5rem;
+  padding: 1rem;
 
-  & div {
-    outline: lightcyan solid 1px;
-    margin-block: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 0.25rem;
+  position: relative;
 
-    p {
-      background-color: aqua;
-      width: fit-content;
-      flex-basis: 45%;
+  h3 {
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%, 0.9);
+    text-shadow: 0 0 0.5rem hsl(0, 0%, 0%, 0.5);
+    z-index: -1;
+  }
+
+  div {
+    color: hsl(300, 100%, 15%);
+
+    ul {
+      padding-block: 1rem;
+      li {
+        list-style-type: disc;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  @include media-query(tablet) {
+    h3 {
+      top: -25%;
+    }
+  }
+
+  @include media-query(laptop) {
+    h3 {
+      top: -35%;
+    }
+  }
+
+  @include media-query(desktop) {
+    h3 {
+      top: -40%;
     }
   }
 }
