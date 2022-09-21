@@ -1,5 +1,7 @@
+@use '../../styles/scss/' as *;
+
 .Footer {
-  background-color: lightpink;
+  background-color: hsl(0, 0%, 85%);
 
   padding: 0.5rem;
 
@@ -7,18 +9,7 @@
   bottom: 0;
   width: 100%;
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-
-    li {
-      font-size: 1.25rem;
-    }
-  }
-
-  @media (min-width: 500px) {
+  @include media-query(tablet) {
     display: none;
   }
 }

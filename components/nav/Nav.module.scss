@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Nav {
   // background-color: blanchedalmond;
   padding: 0.25rem;
@@ -8,36 +10,37 @@
     justify-content: center;
     gap: 1rem;
 
-    padding: 0.25rem;
+    padding: var(--nav-list-padding);
 
     // background-color: lightslategray;
 
     li {
-      font-size: 1.25rem;
+      font-size: var(--nav-link-text);
+      line-height: var(--nav-line-height);
 
       // background-color: lightblue;
     }
   }
 
-  @media (prefers-reduced-motion: no-preference) {
+  @include motion-allowed() {
     ul {
       animation: slideDown 1000ms ease forwards;
     }
+
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-125%);
+      }
+
+      100% {
+        transform: translateY(0%);
+      }
+    }
   }
 
-  @media (min-width: 500px) {
+  @include media-query(tablet) {
     ul {
       flex-direction: column;
     }
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-125%);
-  }
-
-  100% {
-    transform: translateY(0%);
   }
 }

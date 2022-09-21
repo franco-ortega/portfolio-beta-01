@@ -1,46 +1,44 @@
-.NavSocialMedia {
-  // background-color: lightseagreen;
+@use '../../styles/scss/' as *;
 
+.NavSocialMedia {
   padding: 0.25rem;
 
   ul {
-    // margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
 
     // background-color: lightgoldenrodyellow;
-    padding: 0.25rem;
+    padding: var(--nav-list-padding);
 
     li {
-      font-size: 1.25rem;
-      line-height: 1.25rem;
+      font-size: var(--nav-link-text);
+      line-height: var(--nav-line-height);
 
       // background-color: lightgray;
     }
   }
 
-  @media (prefers-reduced-motion: no-preference) {
+  @include motion-allowed() {
     ul {
       animation: slideUp 1000ms ease forwards;
     }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(125%);
+      }
+
+      100% {
+        transform: translateY(0%);
+      }
+    }
   }
 
-  @media (min-width: 500px) {
-    display: block;
+  @include media-query(tablet) {
     ul {
       flex-direction: column;
     }
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(125%);
-  }
-
-  100% {
-    transform: translateY(0%);
   }
 }

@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Layout {
   background-color: hsl(0, 0%, 95%);
   min-height: 100vh;
@@ -6,22 +8,22 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (prefers-reduced-motion: no-preference) {
+  @include motion-allowed() {
     animation: fadeIn 1000ms ease forwards;
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 100;
+      }
+    }
   }
 
-  @media (min-width: 500px) {
+  @include media-query(tablet) {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
   }
 }

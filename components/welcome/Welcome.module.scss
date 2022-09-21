@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Welcome {
   background-color: hsl(0, 0%, 95%);
   height: 100vh;
@@ -42,11 +44,11 @@
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: var(--landing-name-text);
     }
 
     h2 {
-      font-size: 1.75rem;
+      font-size: var(--landing-title-text);
     }
   }
 
@@ -55,12 +57,13 @@
     border-radius: 0.5rem;
     color: hsl(0, 0%, 90%);
     padding: 0.25rem 0.5rem;
-    font-size: 1rem;
+
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: var(--landing-button-text);
   }
 
-  @media (width > 900px) {
+  @include media-query(laptop) {
     grid-template-columns: repeat(3, 1fr);
 
     main {
@@ -68,7 +71,8 @@
     }
   }
 }
-@media (prefers-reduced-motion: no-preference) {
+
+@include motion-allowed() {
   .FadeOut {
     opacity: 0%;
   }
