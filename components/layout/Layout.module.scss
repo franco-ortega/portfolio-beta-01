@@ -10,20 +10,20 @@
 
   @include motion-allowed() {
     animation: fadeIn 1000ms ease forwards;
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 100;
+      }
+    }
   }
 
   @include media-query(tablet) {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
   }
 }

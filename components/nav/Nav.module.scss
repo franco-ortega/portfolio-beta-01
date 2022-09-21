@@ -25,21 +25,21 @@
     ul {
       animation: slideDown 1000ms ease forwards;
     }
+
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-125%);
+      }
+
+      100% {
+        transform: translateY(0%);
+      }
+    }
   }
 
   @include media-query(tablet) {
     ul {
       flex-direction: column;
     }
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateY(-125%);
-  }
-
-  100% {
-    transform: translateY(0%);
   }
 }
