@@ -3,12 +3,11 @@
 
   padding: 0.5rem;
 
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 
   ul {
-    // margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,8 +20,5 @@
 
   @media (min-width: 500px) {
     display: none;
-    // ul {
-    //   flex-direction: column;
-    // }
   }
 }
