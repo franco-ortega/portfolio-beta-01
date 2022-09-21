@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Welcome {
   background-color: hsl(0, 0%, 95%);
   height: 100vh;
@@ -60,7 +62,7 @@
       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-  @media (width > 900px) {
+  @include media-query(laptop) {
     grid-template-columns: repeat(3, 1fr);
 
     main {

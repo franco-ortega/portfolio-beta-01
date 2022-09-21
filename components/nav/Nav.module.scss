@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Nav {
   // background-color: blanchedalmond;
   padding: 0.25rem;
@@ -25,7 +27,7 @@
     }
   }
 
-  @media (min-width: 500px) {
+  @include media-query(tablet) {
     ul {
       flex-direction: column;
     }

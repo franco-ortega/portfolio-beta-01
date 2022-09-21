@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Layout {
   background-color: hsl(0, 0%, 95%);
   min-height: 100vh;
@@ -10,7 +12,7 @@
     animation: fadeIn 1000ms ease forwards;
   }
 
-  @media (min-width: 500px) {
+  @include media-query(tablet) {
     display: flex;
     flex-direction: row;
     align-items: center;

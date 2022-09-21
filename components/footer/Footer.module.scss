@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .Footer {
   background-color: lightpink;
 
@@ -18,7 +20,7 @@
     }
   }
 
-  @media (min-width: 500px) {
+  @include media-query(tablet) {
     display: none;
   }
 }
