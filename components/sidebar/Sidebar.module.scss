@@ -1,8 +1,7 @@
 @use '../../styles/scss/' as *;
 
 .Sidebar {
-  background-color: hsl(0, 0%, 85%);
-  background-color: hsl(300, 100%, 15%);
+  background-color: var(--nav-bar-bgcolor);
   color: hsl(0, 0%, 85%);
 
   padding: 0.5rem;

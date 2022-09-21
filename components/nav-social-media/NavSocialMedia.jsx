@@ -9,57 +9,47 @@ import {
 import styles from './NavSocialMedia.module.scss';
 
 const NavSocialMedia = () => {
-  const iconColor = 'lightblue';
-
   return (
     <nav className={styles.NavSocialMedia}>
       <ul>
         <li>
           <a
+            title='GitHub'
             href='https://github.com/franco-ortega'
             rel='noreferrer'
             target='_blank'
           >
-            <FontAwesomeIcon
-              icon={faGithub}
-              style={{ fontSize: 30, color: iconColor }}
-            />
+            <FontAwesomeIcon icon={faGithub} style={{ fontSize: 30 }} />
           </a>
         </li>
         <li>
           <a
+            title='LinkedIn'
             href='https://www.linkedin.com/in/francoortega/'
             rel='noreferrer'
             target='_blank'
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              style={{ fontSize: 30, color: iconColor }}
-            />
+            <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: 30 }} />
           </a>
         </li>
         <li>
           <a
+            title='Twitter'
             href='https://twitter.com/FrancoOrtegaDev'
             rel='noreferrer'
             target='_blank'
           >
-            <FontAwesomeIcon
-              icon={faTwitter}
-              style={{ fontSize: 30, color: iconColor }}
-            />
+            <FontAwesomeIcon icon={faTwitter} style={{ fontSize: 30 }} />
           </a>
         </li>
         <li>
           <a
+            title='Instagram'
             href='https://www.instagram.com/reefwoodcartography/'
             rel='noreferrer'
             target='_blank'
           >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              style={{ fontSize: 30, color: iconColor }}
-            />
+            <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 30 }} />
           </a>
         </li>
       </ul>
