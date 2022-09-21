@@ -4,9 +4,9 @@ const Nav = () => {
   return (
     <nav className={styles.Nav}>
       <span>Home</span>
-      <span>Projects</span>
-      <span>About</span>
-      <span>Resume</span>
+      <span> - Projects</span>
+      <span> - About</span>
+      <span> - Resume</span>
     </nav>
   );
 };
