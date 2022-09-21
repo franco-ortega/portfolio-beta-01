@@ -3,3 +3,15 @@
     @content;
   }
 }
+
+@mixin icon-dialog($item, $title, $top, $left) {
+  li:nth-child(#{$item}):before {
+    content: $title;
+    font-size: 1rem;
+    opacity: 0;
+
+    position: absolute;
+    top: $top;
+    left: $left;
+  }
+}
