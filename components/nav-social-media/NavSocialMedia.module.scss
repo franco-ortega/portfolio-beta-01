@@ -21,10 +21,26 @@
     }
   }
 
+  @media (prefers-reduced-motion: no-preference) {
+    ul {
+      animation: slideUp 1000ms ease forwards;
+    }
+  }
+
   @media (min-width: 500px) {
     display: block;
     ul {
       flex-direction: column;
     }
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(125%);
+  }
+
+  100% {
+    transform: translateY(0%);
   }
 }
