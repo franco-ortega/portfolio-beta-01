@@ -12,4 +12,10 @@
       font-size: 1.25rem;
     }
   }
+
+  @media (min-width: 800px) {
+    ul {
+      flex-direction: column;
+    }
+  }
 }
