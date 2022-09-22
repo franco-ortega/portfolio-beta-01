@@ -6,8 +6,8 @@ const Home = () => {
       <h3>Hello!</h3>
 
       <div>
-        I&apos;m a software engineer who loves to create intuitive interfaces. I
-        value:
+        I&apos;m a software engineer who loves to create intuitive interfaces
+        and building out features across the stack. I value:
         <ul>
           <li>
             well-documented and efficient processes that offer both structure
@@ -20,7 +20,7 @@ const Home = () => {
           </li>
         </ul>
         Optimism guides my efforts while practicality ensures that my goals are
-        brought to fruition. Helping others brings me great joy.
+        brought to fruition, and helping others brings me great joy.
       </div>
     </div>
   );
