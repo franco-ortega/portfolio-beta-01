@@ -16,13 +16,12 @@
   --nav-text-color: hsl(195, 53%, 79%);
   --nav-list-padding: 0.25rem;
   --primary-text: 'Salma Pro', sans-serif;
+  --primary-text-color: var(--nav-bar-bgcolor);
 }
 
 html,
 body {
   font-family: sans-serif;
-  /* -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,  */
 }
 
 a {
