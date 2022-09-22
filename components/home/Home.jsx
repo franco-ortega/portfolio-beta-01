@@ -7,7 +7,7 @@ const Home = () => {
 
       <div>
         I&apos;m a software engineer who loves to create intuitive interfaces
-        and building out features across the stack. I value:
+        and build out features across the stack. I value:
         <ul>
           <li>
             well-documented and efficient processes that offer both structure
