@@ -12,6 +12,7 @@
   --nav-bar-bgcolor: hsl(300, 100%, 15%);
   --nav-link-font: 'Salma Pro', sans-serif;
   --nav-link-text: 1.25rem;
+  --nav-link-text-color: hsl(0, 0%, 85%);
   --nav-line-height: 1.25rem;
   --nav-text-color: hsl(195, 53%, 79%);
   --nav-list-padding: 0.25rem;
