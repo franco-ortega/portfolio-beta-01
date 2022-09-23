@@ -1,6 +1,12 @@
 @use '../../styles/scss/' as *;
 
 .Footer {
+  // grid-column: 1 / 6;
+  // grid-row: 5 / 6;
+
+  // height: fit-content;
+  // align-self: flex-end;
+
   background-color: var(--nav-bar-bgcolor);
   padding: 0.25rem;
 
