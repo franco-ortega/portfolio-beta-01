@@ -17,6 +17,8 @@
   --nav-list-padding: 0.25rem;
   --primary-text: 'Salma Pro', sans-serif;
   --primary-text-color: var(--nav-bar-bgcolor);
+  --page-bgcolor: hsla(39, 58%, 57%, 0.5);
+  --page-width: 80%;
 }
 
 html,

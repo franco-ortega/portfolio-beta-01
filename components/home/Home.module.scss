@@ -1,12 +1,9 @@
 @use '../../styles/scss/' as *;
 
 .Home {
-  // grid-column: 2 / 8;
-  // grid-row: 2 / 5;
-  width: 80%;
-
-  background-color: hsla(39, 58%, 57%, 0.5);
+  background-color: var(--page-bgcolor);
   border-radius: 0.25rem;
+  width: var(--page-width);
   margin: auto;
   padding: 1rem;
 
@@ -43,9 +40,6 @@
   }
 
   @include media-query(tablet) {
-    // grid-column: 3 / 8;
-    // grid-row: 1 / 6;
-
     padding: 1.1rem;
     h3 {
       top: -12%;
@@ -53,7 +47,6 @@
   }
 
   @include media-query(laptop) {
-    // grid-column: 3 / 8;
     h3 {
       top: -15%;
       left: -6%;

@@ -1,11 +1,6 @@
 .Projects {
-  background-color: lightpink;
-
-  // grid-column: 1 / 9;
-  // grid-row: 1 / 6;
-
-  overflow: auto;
-
-  // grid-column: 1 / 6;
-  // grid-row: 2 / 5;
+  background-color: var(--page-bgcolor);
+  width: var(--page-width);
+  margin-block: auto;
+  margin-inline: auto;
 }
