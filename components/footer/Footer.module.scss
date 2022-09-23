@@ -2,12 +2,7 @@
 
 .Footer {
   background-color: var(--nav-bar-bgcolor);
-
-  padding: 0.5rem;
-
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 0.25rem;
 
   @include media-query(tablet) {
     display: none;

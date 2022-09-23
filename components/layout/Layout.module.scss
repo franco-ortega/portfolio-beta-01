@@ -8,6 +8,10 @@
   flex-direction: column;
   justify-content: space-between;
 
+  main {
+    height: 80vh;
+  }
+
   @include motion-allowed() {
     animation: fadeIn 1000ms ease forwards;
 
@@ -22,9 +26,6 @@
   }
 
   @include media-query(tablet) {
-    // display: flex;
     flex-direction: row;
-    // align-items: center;
-    // justify-content: flex-start;
   }
 }

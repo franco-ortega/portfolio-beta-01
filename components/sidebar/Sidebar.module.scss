@@ -2,24 +2,20 @@
 
 .Sidebar {
   background-color: var(--nav-bar-bgcolor);
-  color: hsl(0, 0%, 85%);
-
   padding: 0.5rem;
 
   // hide social media nav in sidebar on mobile
-  nav:not(:nth-child(1)) {
+  nav:nth-child(2) {
     display: none;
   }
 
   @include media-query(tablet) {
-    height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     // display social media nav in sidebar on desktop
-    nav:not(:nth-child(1)) {
+    nav:nth-child(2) {
       display: block;
     }
   }
