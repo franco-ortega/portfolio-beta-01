@@ -1,36 +1,33 @@
 @use '../../styles/scss/' as *;
 
 .NavSocialMedia {
-  padding: 0.25rem;
   display: flex;
   justify-content: center;
 
   ul {
     width: 80%;
-    color: var(--nav-text-color);
-    font-family: var(--nav-link-font);
+    padding: var(--nav-list-padding);
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
-    // background-color: lightgoldenrodyellow;
-    padding: var(--nav-list-padding);
+    color: var(--nav-text-color);
+    font-family: var(--nav-link-font);
 
     li {
-      font-size: var(--nav-link-text);
+      font-size: var(--nav-text-size);
       line-height: var(--nav-line-height);
-      position: relative;
-
-      // background-color: lightgray;
     }
   }
 
   @include media-query(tablet) {
     ul {
+      width: 100%;
+
       flex-direction: column;
-      align-items: center;
       gap: 2.25rem;
+      text-align: center;
 
       @include icon-dialog-reduced-motion(1, 'GitHub', -70%, -35%);
       @include icon-dialog-reduced-motion(2, 'LinkedIn', -70%, -55%);
@@ -61,7 +58,7 @@
           transition: all 500ms ease;
 
           &:hover {
-            margin-top: 0.5rem;
+            margin-top: 0.75rem;
             transform: scale(115%, 115%);
           }
         }
@@ -71,9 +68,9 @@
         }
 
         @include icon-dialog(1, 'GitHub', -65%, -35%);
-        @include icon-dialog(2, 'LinkedIn', -60%, -55%);
-        @include icon-dialog(3, 'Twitter', -55%, -35%);
-        @include icon-dialog(4, 'Instagram', -65%, -80%);
+        @include icon-dialog(2, 'LinkedIn', -63%, -70%);
+        @include icon-dialog(3, 'Twitter', -58%, -35%);
+        @include icon-dialog(4, 'Instagram', -65%, -90%);
 
         li:nth-child(1):hover::before,
         li:nth-child(2):hover::before,
