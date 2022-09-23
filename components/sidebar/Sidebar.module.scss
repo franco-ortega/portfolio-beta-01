@@ -1,9 +1,9 @@
 @use '../../styles/scss/' as *;
 
 .Sidebar {
-  grid-column: 1 / 8;
-  grid-row: 1 / 2;
-  height: fit-content;
+  // grid-column: 1 / 8;
+  // grid-row: 1 / 2;
+  // height: fit-content;
 
   background-color: var(--nav-bar-bgcolor);
   padding: 0.5rem;
