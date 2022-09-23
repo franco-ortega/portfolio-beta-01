@@ -75,10 +75,10 @@
         }
 
         // text above icons that appears on hover
-        @include icon-dialog(1, 'GitHub', -65%, -35%);
-        @include icon-dialog(2, 'LinkedIn', -63%, -70%);
-        @include icon-dialog(3, 'Twitter', -58%, -35%);
-        @include icon-dialog(4, 'Instagram', -65%, -90%);
+        @include icon-dialog(1, 'GitHub', -65%, 17%);
+        @include icon-dialog(2, 'LinkedIn', -63%, 10%);
+        @include icon-dialog(3, 'Twitter', -58%, 17%);
+        @include icon-dialog(4, 'Instagram', -65%, 3%);
 
         li:nth-child(1):hover::before,
         li:nth-child(2):hover::before,
