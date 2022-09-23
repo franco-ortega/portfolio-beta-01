@@ -29,10 +29,15 @@
       gap: 2.25rem;
       text-align: center;
 
-      @include icon-dialog-reduced-motion(1, 'GitHub', -70%, -35%);
-      @include icon-dialog-reduced-motion(2, 'LinkedIn', -70%, -55%);
-      @include icon-dialog-reduced-motion(3, 'Twitter', -65%, -35%);
-      @include icon-dialog-reduced-motion(4, 'Instagram', -75%, -80%);
+      li {
+        position: relative;
+      }
+
+      // text above icons for users with reduced-motion
+      @include icon-dialog-reduced-motion(1, 'GitHub', -72%, 20%);
+      @include icon-dialog-reduced-motion(2, 'LinkedIn', -72%, 14%);
+      @include icon-dialog-reduced-motion(3, 'Twitter', -68%, 20%);
+      @include icon-dialog-reduced-motion(4, 'Instagram', -77%, 10%);
     }
   }
 
@@ -67,6 +72,7 @@
           transition: opacity 750ms ease;
         }
 
+        // text above icons that appears on hover
         @include icon-dialog(1, 'GitHub', -65%, -35%);
         @include icon-dialog(2, 'LinkedIn', -63%, -70%);
         @include icon-dialog(3, 'Twitter', -58%, -35%);
