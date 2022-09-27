@@ -1,3 +1,8 @@
 .Project {
-  background-color: lightblue;
+  border: 0.25rem solid purple;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  background-color: var(--project-bgcolor);
+  color: var(--project-text-color);
 }

@@ -7,15 +7,17 @@ const Projects = () => {
     <div className={styles.Projects}>
       <h2>Projects</h2>
       <p>These are my projects</p>
-      {projectsData.map((project, i) => (
-        <Project
-          key={i}
-          title={project.title}
-          tech={project.tech}
-          description={project.description}
-          learnings={project.learnings}
-        />
-      ))}
+      <div>
+        {projectsData.map((project, i) => (
+          <Project
+            key={i}
+            title={project.title}
+            tech={project.tech}
+            description={project.description}
+            learnings={project.learnings}
+          />
+        ))}
+      </div>
     </div>
   );
 };
