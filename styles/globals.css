@@ -19,8 +19,10 @@
   --primary-text-color: var(--nav-bar-bgcolor);
   --page-bgcolor: hsla(39, 58%, 57%, 0.5);
   --page-width: 80%;
-  --project-text-color: var(--nav-text-color);
-  --project-bgcolor: var(--nav-bar-bgcolor);
+  /* --project-bgcolor: var(--nav-bar-bgcolor); */
+  /* --project-text-color: var(--nav-text-color); */
+  --project-bgcolor: hsl(187, 14%, 76%);
+  --project-text-color: black;
 }
 
 html,

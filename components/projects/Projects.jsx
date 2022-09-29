@@ -1,6 +1,6 @@
 import styles from './Projects.module.scss';
 import projectsData from '../../data/projects';
-import Project from '../project/Project';
+import ProjectSummary from './ProjectSummary';
 
 const Projects = () => {
   return (
@@ -9,12 +9,12 @@ const Projects = () => {
       <p>These are my projects</p>
       <div>
         {projectsData.map((project, i) => (
-          <Project
+          <ProjectSummary
             key={i}
             title={project.title}
             tech={project.tech}
-            description={project.description}
-            learnings={project.learnings}
+            summary={project.summary}
+            image={'project.image'}
           />
         ))}
       </div>
