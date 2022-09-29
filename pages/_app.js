@@ -5,32 +5,34 @@ import Welcome from '../components/welcome/Welcome';
 import '../styles/globals.css';
 import '@fortawesome/fontawesome-svg-core/styles.css'; // import Font Awesome CSS
 import { config } from '@fortawesome/fontawesome-svg-core';
+import { useRouter } from 'next/router';
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 function MyApp({ Component, pageProps }) {
-  const [home, setHome] = useState(false);
+  const [landing, setLanding] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
   const [noPreference, setNoPreference] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     setNoPreference(
       window.matchMedia('(prefers-reduced-motion: no-preference)').matches
     );
-  }, []);
 
-  console.log('no P', noPreference);
+    if (router.pathname !== '/') setLanding(false);
+  }, [router.pathname]);
 
   const onWelcomeClick = () => {
     if (noPreference) setFadeOut(true);
     setTimeout(
       () => {
-        setHome(true);
+        setLanding(false);
       },
       noPreference ? 1000 : 0
     );
   };
 
-  if (!home)
+  if (landing)
     return <Welcome fadeOut={fadeOut} onWelcomeClick={onWelcomeClick} />;
 
   return (
