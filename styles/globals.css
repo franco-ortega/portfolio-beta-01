@@ -6,22 +6,27 @@
 }
 
 :root {
+  --font-primary: 'Salma Pro', sans-serif;
+
   --landing-name-text: 2.5rem;
   --landing-title-text: 1.75rem;
   --landing-button-text: 1rem;
-  --nav-bar-bgcolor: hsl(300, 100%, 15%);
-  --nav-link-font: 'Salma Pro', sans-serif;
+
+  --nav-bgcolor: hsl(300, 100%, 15%);
+  --nav-link-font: var(--font-primary);
   --nav-text-size: 1.25rem;
   --nav-line-height: 1.25rem;
   --nav-text-color: hsl(195, 53%, 79%);
   --nav-list-padding: 0.25rem;
+
   --primary-text: 'Salma Pro', sans-serif;
-  --primary-text-color: var(--nav-bar-bgcolor);
+  --primary-text-color: var(--nav-bgcolor);
+
   --page-bgcolor: hsla(39, 58%, 57%, 0.5);
-  --page-width: 80%;
-  /* --project-bgcolor: var(--nav-bar-bgcolor); */
-  /* --project-text-color: var(--nav-text-color); */
-  --project-bgcolor: hsl(187, 14%, 76%);
+  --page-width: min(90%, 50rem);
+
+  --project-bgcolor: var(--nav-text-color);
+  --project-border-color: var(--nav-bgcolor);
   --project-text-color: black;
 }
 

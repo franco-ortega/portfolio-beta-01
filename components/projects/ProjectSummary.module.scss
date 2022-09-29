@@ -1,16 +1,45 @@
+@use '../../styles/scss/' as *;
+
 .ProjectSummary {
-  border: 0.2rem solid purple;
+  background: var(--project-bgcolor), red;
+  border: 0.2rem solid var(--project-border-color);
   border-radius: 0.5rem;
+
+  width: min(var(--page-width), 30rem);
   padding: 1rem;
+  margin-inline: auto;
 
-  background-color: var(--project-bgcolor);
+  font-family: var(--primary-text);
   color: var(--project-text-color);
-  // background-color: hsl(187, 14%, 76%);
-  // color: var(--project-bgcolor);
-  // color: black;
 
-  h2 {
+  position: relative;
+
+  & > h2 {
+    text-align: center;
     font-size: 1.75rem;
+  }
+
+  img {
+    // position: relative;
+    z-index: -1;
+    // opacity: 0.5;
+    background-blend-mode: darken luminosity;
+  }
+
+  @include media-query(tablet) {
+    width: 19rem;
+    // width: min(100%, 30rem);
+    // width: max(20rem, 90%);
+    // width: calc(20rem - 20px);
+  }
+
+  @include media-query(laptop) {
+    width: min(100%, 25rem);
+    width: 20rem;
+  }
+
+  @include media-query(desktop) {
+    // width: 15rem;
   }
 }
 
