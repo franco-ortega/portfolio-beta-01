@@ -6,6 +6,7 @@
   height: 100%;
   // overflow: auto;
 
-  @include media-query(tablet) {
+  @include media-query(junior) {
+    // height: 100vh;
   }
 }
