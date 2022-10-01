@@ -1,7 +1,7 @@
 const projects = [
   {
     title: 'WeatherBeats',
-    tech: 'React, Node, Spotify API',
+    tech: ['React', 'Node', 'Spotify API'],
     image: 'weatherbeats.png',
     summary:
       'Provides a music playlist based on the weather. Users may customize their experience by selecting a preferred location, weather, or genre.',
@@ -16,8 +16,8 @@ const projects = [
   },
   {
     title: 'Ebb',
-    tech: 'Chrome, Node',
-    image: '/public/images/weatherbeats.png',
+    tech: ['Chrome', 'Node'],
+    image: 'test1.png',
     summary:
       'Summary lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dicta eligendi et incidunt maiores architecto provident ut quod atque omnis assumenda iure.',
     description:
@@ -31,8 +31,8 @@ const projects = [
   },
   {
     title: 'beHuman',
-    tech: 'VSCode, Node, PostgreSQL, pgAdmin',
-    image: '/public/images/weatherbeats.png',
+    tech: ['VSCode', 'Node', 'PostgreSQL', 'pgAdmin'],
+    image: 'test2.png',
     summary:
       'Summary lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dicta eligendi et incidunt maiores architecto provident ut quod atque omnis assumenda iure.',
     description:
@@ -46,8 +46,8 @@ const projects = [
   },
   {
     title: 'Choose GIF',
-    tech: 'React, Node, PostgreSQL, pgAdmin',
-    image: '/public/images/weatherbeats.png',
+    tech: ['React', 'Node', 'PostgreSQL', 'pgAdmin'],
+    image: 'test3.png',
     summary:
       'Summary lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dicta eligendi et incidunt maiores architecto provident ut quod atque omnis assumenda iure.',
     description:
@@ -61,8 +61,8 @@ const projects = [
   },
   {
     title: 'Tarot',
-    tech: 'HTML, CSS, JavaScript',
-    image: '/public/images/weatherbeats.png',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    image: 'weatherbeats.png',
     summary:
       'Summary lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dicta eligendi et incidunt maiores architecto provident ut quod atque omnis assumenda iure.',
     description:
@@ -76,8 +76,8 @@ const projects = [
   },
   {
     title: 'Hide & Seek',
-    tech: 'React',
-    image: '/public/images/weatherbeats.png',
+    tech: ['React'],
+    image: 'test1.png',
     summary:
       'Summary lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dicta eligendi et incidunt maiores architecto provident ut quod atque omnis assumenda iure.',
     description:
@@ -91,8 +91,8 @@ const projects = [
   },
   {
     title: 'Glowing Colors',
-    tech: 'React',
-    image: '/public/images/weatherbeats.png',
+    tech: ['React'],
+    image: 'test2.png',
     summary:
       'Summary lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dicta eligendi et incidunt maiores architecto provident ut quod atque omnis assumenda iure.',
     description:
@@ -106,8 +106,8 @@ const projects = [
   },
   {
     title: 'Eclipse: Tile Tray',
-    tech: 'NextJS, MongoDB',
-    image: '/public/images/weatherbeats.png',
+    tech: ['NextJS', 'MongoDB'],
+    image: 'test3.png',
     summary:
       'Summary lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia dicta eligendi et incidunt maiores architecto provident ut quod atque omnis assumenda iure.',
     description:

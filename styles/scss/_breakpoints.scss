@@ -3,7 +3,8 @@
 $breakpoints: (
   desktop: 1200px,
   laptop: 900px,
-  tablet: 500px
+  tablet: 750px,
+  junior: 500px
 );
 
 @mixin media-query($key) {
