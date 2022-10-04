@@ -13,6 +13,7 @@ const Projects = () => {
             key={i}
             title={project.title}
             tech={project.tech}
+            path={project.path}
             summary={project.summary}
             image={`/images/${project.image}`}
           />

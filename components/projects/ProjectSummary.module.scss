@@ -1,7 +1,8 @@
 @use '../../styles/scss/' as *;
 
 .ProjectSummary {
-  background: var(--project-bgcolor), red;
+  // background: var(--project-bgcolor), red;
+  background-color: transparent;
   border: 0.2rem solid var(--project-border-color);
   border-radius: 0.5rem;
 
@@ -20,9 +21,9 @@
   }
 
   img {
-    // position: relative;
-    z-index: -1;
-    // opacity: 0.5;
+    position: relative;
+    // z-index: -1;
+    opacity: 0.5;
     background-blend-mode: darken luminosity;
   }
 
@@ -36,6 +37,14 @@
   @include media-query(laptop) {
     width: min(100%, 25rem);
     width: 20rem;
+
+    @include motion-allowed() {
+      transition: all 250ms ease-in;
+
+      &:hover {
+        transform: scale(105%);
+      }
+    }
   }
 
   @include media-query(desktop) {
