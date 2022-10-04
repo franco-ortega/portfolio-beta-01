@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import displayTech from '../../utils/displayTech';
+import Button from '../buttons/Button';
 import styles from './ProjectDetails.module.scss';
 
 const ProjectDetails = ({ data }) => {
@@ -15,7 +16,7 @@ const ProjectDetails = ({ data }) => {
     <div className={styles.ProjectDetails}>
       <p>
         <h2>Project: {data.title}</h2>
-        <button onClick={onBackClick}>{backArrow} Back to Projects</button>
+        <Button handler={onBackClick} text={`${backArrow} Back to Projects`} />
       </p>
       <p>
         <h3>Tech</h3> {displayTech(data.tech)}
