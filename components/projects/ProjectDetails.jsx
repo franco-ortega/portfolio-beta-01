@@ -1,10 +1,22 @@
+import { useRouter } from 'next/router';
 import displayTech from '../../utils/displayTech';
 import styles from './ProjectDetails.module.scss';
 
 const ProjectDetails = ({ data }) => {
+  const router = useRouter();
+
+  const backArrow = '<-';
+
+  const onBackClick = () => {
+    router.push('/projects');
+  };
+
   return (
     <div className={styles.ProjectDetails}>
-      <h2>Project: {data.title}</h2>
+      <p>
+        <h2>Project: {data.title}</h2>
+        <button onClick={onBackClick}>{backArrow} Back to Projects</button>
+      </p>
       <p>
         <h3>Tech</h3> {displayTech(data.tech)}
       </p>
