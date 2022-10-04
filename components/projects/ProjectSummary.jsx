@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import displayTech from '../../utils/displayTech';
 import styles from './ProjectSummary.module.scss';
 
 const ProjectSummary = ({ title, tech, path, summary, image }) => {
@@ -18,7 +19,8 @@ const ProjectSummary = ({ title, tech, path, summary, image }) => {
       <h2>{title}</h2>
       <p className={styles.Tech}>
         {`${openCurly} `}
-        {tech.reduce((prev, curr) => prev + ' - ' + curr)}
+        {/* {tech.reduce((prev, curr) => prev + ' - ' + curr)} */}
+        {displayTech(tech)}
         {` ${closeCurly}`}
       </p>
       <Image

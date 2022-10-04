@@ -1,3 +1,4 @@
+import displayTech from '../../utils/displayTech';
 import styles from './ProjectDetails.module.scss';
 
 const ProjectDetails = ({
@@ -7,7 +8,7 @@ const ProjectDetails = ({
   return (
     <div className={styles.ProjectDetails}>
       <h2>Title: {data.title}</h2>
-      <p>Tech: {data.tech}</p>
+      <p>Tech: {displayTech(data.tech)}</p>
       <p>Description: {data.description}</p>
       <p>Learnings: {data.learnings}</p>
     </div>
