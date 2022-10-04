@@ -29,7 +29,7 @@ const ProjectSummary = ({ title, tech, path, summary, image }) => {
         layout='fill'
       />
       <p>{summary}</p>
-      <p>Click here for more details.</p>
+      <p>Click for more details.</p>
     </button>
   );
 };

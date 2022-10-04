@@ -37,6 +37,14 @@
   @include media-query(laptop) {
     width: min(100%, 25rem);
     width: 20rem;
+
+    @include motion-allowed() {
+      transition: all 250ms ease-in;
+
+      &:hover {
+        transform: scale(105%);
+      }
+    }
   }
 
   @include media-query(desktop) {
