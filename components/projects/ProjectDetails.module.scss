@@ -18,8 +18,14 @@
     width: 90%;
     margin-inline: auto;
 
-    li {
+    li + li {
       margin-top: 0.5rem;
     }
+  }
+  div {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
   }
 }
