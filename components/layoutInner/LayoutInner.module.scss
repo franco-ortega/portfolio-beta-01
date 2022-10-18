@@ -2,11 +2,13 @@
 
 .LayoutInner {
   display: flex;
+  // border: 1px solid red;
 
   height: 100%;
   // overflow: auto;
 
   @include media-query(junior) {
+    // display: block;
     // height: 100vh;
   }
 }

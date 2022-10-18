@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Footer from '../footer/Footer';
 import styles from './Layout.module.scss';
 import Sidebar from '../sidebar/Sidebar';
+import TestNav from '../test/TestNav';
 
 const Layout = ({ children }) => {
   return (
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
         <meta name='description' content='Practice portfolio site' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      {/* <TestNav /> */}
       <Sidebar />
       <main>{children}</main>
       <Footer />

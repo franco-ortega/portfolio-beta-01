@@ -1,0 +1,105 @@
+@use '../../styles/scss/' as *;
+
+.TestNav {
+  color: lightblue;
+
+  nav ul {
+    background-color: purple;
+    padding-block: 0.5rem;
+    font-size: 1.25rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    li {
+      // outline: 1px solid black;
+      text-align: center;
+    }
+  }
+
+  nav:last-child ul {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+  }
+
+  @include media-query(tablet) {
+    background-color: purple;
+
+    nav ul {
+      font-size: 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    nav:first-child ul,
+    nav:last-child ul {
+      width: 7rem;
+    }
+
+    & nav:last-child ul {
+      position: absolute;
+      bottom: 0;
+
+      @include icon-dialog-reduced-motion(1, 'GitHub', -5%, 30%);
+      @include icon-dialog-reduced-motion(2, 'LinkedIn', 20%, 25%);
+      @include icon-dialog-reduced-motion(3, 'Twitter', 45%, 30%);
+      @include icon-dialog-reduced-motion(4, 'Instagram', 70%, 20%);
+    }
+  }
+
+  @include motion-allowed() {
+    @include media-query(tablet) {
+      nav:first-child ul {
+        animation: slideDown 1000ms ease forwards;
+      }
+
+      @keyframes slideDown {
+        0% {
+          transform: translateY(-125%);
+        }
+
+        100% {
+          transform: translateY(0%);
+        }
+      }
+
+      nav:last-child ul {
+        gap: 1rem;
+        animation: slideUp 1000ms ease forwards;
+      }
+
+      @keyframes slideUp {
+        0% {
+          transform: translateY(125%);
+        }
+
+        100% {
+          transform: translateY(0%);
+        }
+      }
+
+      @include media-query(tablet) {
+        ul {
+          li {
+            transition: transform 500ms ease;
+
+            &:hover {
+              transform: scale(120%, 120%);
+            }
+          }
+        }
+      }
+
+      nav:last-child ul {
+        @include icon-dialog(1, 'GitHub', -5%, 30%);
+        @include icon-dialog(2, 'LinkedIn', 20%, 25%);
+        @include icon-dialog(3, 'Twitter', 45%, 30%);
+        @include icon-dialog(4, 'Instagram', 70%, 20%);
+      }
+    }
+  }
+}
