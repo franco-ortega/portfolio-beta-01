@@ -2,21 +2,15 @@
 
 .TestNav {
   background-color: purple;
-  color: gold;
+  color: lightblue;
 
   nav ul {
-    // display: flex;
-    // flex-direction: row;
-
     padding-block: 0.5rem;
 
     font-size: 1.25rem;
 
     display: grid;
-    // grid-auto-flow: column;
     grid-template-columns: repeat(4, 1fr);
-
-    // justify-items: center;
 
     li {
       // outline: 1px solid black;
@@ -25,17 +19,18 @@
   }
 
   nav:first-child ul {
-    background-color: lightblue;
-    color: darkblue;
+    // background-color: lightblue;
+    // color: darkblue;
 
-    li:nth-child(3) {
-      // background-color: green;
-    }
+    // li:nth-child(2) {
+    //   background-color: green;
+    // }
   }
 
   nav:last-child ul {
-    background-color: lightgray;
-    color: darkgray;
+    // background-color: lightgray;
+    // color: gold;
+    background-color: purple;
 
     width: 100%;
     // width: 75%;
@@ -43,13 +38,13 @@
     position: absolute;
     bottom: 0;
 
-    li:nth-child(3) {
-      // background-color: brown;
-    }
+    // li:nth-child(3) {
+    //   background-color: brown;
+    // }
   }
 
   @include media-query(junior) {
-    background-color: red;
+    // background-color: red;
     width: fit-content;
     height: 100vh;
 
@@ -63,7 +58,12 @@
 
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      // align-items: flex-start;
+      gap: 1rem;
+
+      li {
+        width: 100%;
+      }
     }
   }
 }
