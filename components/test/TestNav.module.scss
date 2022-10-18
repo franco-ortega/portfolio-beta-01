@@ -53,6 +53,47 @@
 
   @include motion-allowed() {
     @include media-query(junior) {
+      nav:first-child ul {
+        animation: slideDown 1000ms ease forwards;
+      }
+
+      @keyframes slideDown {
+        0% {
+          transform: translateY(-125%);
+        }
+
+        100% {
+          transform: translateY(0%);
+        }
+      }
+
+      nav:last-child ul {
+        gap: 1rem;
+        animation: slideUp 1000ms ease forwards;
+      }
+
+      @keyframes slideUp {
+        0% {
+          transform: translateY(125%);
+        }
+
+        100% {
+          transform: translateY(0%);
+        }
+      }
+
+      @include media-query(tablet) {
+        ul {
+          li {
+            transition: transform 500ms ease;
+
+            &:hover {
+              transform: scale(120%, 120%);
+            }
+          }
+        }
+      }
+
       nav ul {
         @include icon-dialog(1, 'GitHub', -5%, 30%);
         @include icon-dialog(2, 'LinkedIn', 20%, 25%);
