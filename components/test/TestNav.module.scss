@@ -1,12 +1,11 @@
 @use '../../styles/scss/' as *;
 
 .TestNav {
-  background-color: purple;
   color: lightblue;
 
   nav ul {
+    background-color: purple;
     padding-block: 0.5rem;
-
     font-size: 1.25rem;
 
     display: grid;
@@ -18,51 +17,47 @@
     }
   }
 
-  nav:first-child ul {
-    // background-color: lightblue;
-    // color: darkblue;
-
-    // li:nth-child(2) {
-    //   background-color: green;
-    // }
-  }
-
   nav:last-child ul {
-    // background-color: lightgray;
-    // color: gold;
-    background-color: purple;
-
     width: 100%;
-    // width: 75%;
 
     position: absolute;
     bottom: 0;
-
-    // li:nth-child(3) {
-    //   background-color: brown;
-    // }
   }
 
   @include media-query(junior) {
-    // background-color: red;
-    width: fit-content;
-    height: 100vh;
-
-    nav:first-child ul,
-    nav:last-child ul {
-      width: 7rem;
-    }
+    background-color: purple;
 
     nav ul {
       font-size: 1.5rem;
 
       display: flex;
       flex-direction: column;
-      // align-items: flex-start;
       gap: 1rem;
+    }
 
-      li {
-        width: 100%;
+    nav:first-child ul,
+    nav:last-child ul {
+      width: 7rem;
+    }
+
+    & nav:last-child ul {
+      position: absolute;
+      bottom: 0;
+    }
+
+    @include icon-dialog-reduced-motion(1, 'GitHub', -5%, 30%);
+    @include icon-dialog-reduced-motion(2, 'LinkedIn', 20%, 25%);
+    @include icon-dialog-reduced-motion(3, 'Twitter', 45%, 30%);
+    @include icon-dialog-reduced-motion(4, 'Instagram', 70%, 20%);
+  }
+
+  @include motion-allowed() {
+    @include media-query(junior) {
+      nav ul {
+        @include icon-dialog(1, 'GitHub', -5%, 30%);
+        @include icon-dialog(2, 'LinkedIn', 20%, 25%);
+        @include icon-dialog(3, 'Twitter', 45%, 30%);
+        @include icon-dialog(4, 'Instagram', 70%, 20%);
       }
     }
   }
