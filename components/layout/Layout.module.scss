@@ -23,7 +23,7 @@
     }
   }
 
-  @include media-query(tablet) {
+  @include media-query(junior) {
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
   }

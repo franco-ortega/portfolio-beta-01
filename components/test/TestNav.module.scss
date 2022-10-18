@@ -1,3 +1,5 @@
+@use '../../styles/scss/' as *;
+
 .TestNav {
   background-color: purple;
   color: gold;
@@ -35,12 +37,33 @@
     background-color: lightgray;
     color: darkgray;
 
+    width: 100%;
+    // width: 75%;
+
     position: absolute;
     bottom: 0;
-    width: 100%;
 
     li:nth-child(3) {
       // background-color: brown;
+    }
+  }
+
+  @include media-query(junior) {
+    background-color: red;
+    width: fit-content;
+    height: 100vh;
+
+    nav:first-child ul,
+    nav:last-child ul {
+      width: 7rem;
+    }
+
+    nav ul {
+      font-size: 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 }
