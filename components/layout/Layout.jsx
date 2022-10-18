@@ -12,10 +12,10 @@ const Layout = ({ children }) => {
         <meta name='description' content='Practice portfolio site' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <TestNav />
-      {/* <Sidebar /> */}
+      {/* <TestNav /> */}
+      <Sidebar />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
