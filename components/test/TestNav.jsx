@@ -5,18 +5,18 @@ const TestNav = () => {
     <div className={styles.TestNav}>
       <nav>
         <ul>
-          <li>Link #1</li>
-          <li>Link #2</li>
-          <li>Link #3</li>
-          <li>Link #4</li>
+          <li>Home</li>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Resume</li>
         </ul>
       </nav>
       <nav>
         <ul>
-          <li>Link A</li>
-          <li>Link B</li>
-          <li>Link C</li>
-          <li>Link D</li>
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+          <li>D</li>
         </ul>
       </nav>
     </div>

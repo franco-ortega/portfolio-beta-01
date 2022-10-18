@@ -6,20 +6,28 @@
     // display: flex;
     // flex-direction: row;
 
+    padding-block: 0.5rem;
+
     font-size: 1.25rem;
 
     display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    justify-items: center;
+    // grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+
+    // justify-items: center;
+
+    li {
+      // outline: 1px solid black;
+      text-align: center;
+    }
   }
 
   nav:first-child ul {
     background-color: lightblue;
     color: darkblue;
 
-    li:nth-child(2) {
-      background-color: green;
+    li:nth-child(3) {
+      // background-color: green;
     }
   }
 
@@ -32,7 +40,7 @@
     width: 100%;
 
     li:nth-child(3) {
-      background-color: brown;
+      // background-color: brown;
     }
   }
 }
