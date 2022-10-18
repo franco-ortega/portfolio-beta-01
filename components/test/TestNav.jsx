@@ -1,6 +1,8 @@
+import styles from './TestNav.module.scss';
+
 const TestNav = () => {
   return (
-    <div>
+    <div className={styles.TestNav}>
       <nav>
         <ul>
           <li>Link #1</li>
