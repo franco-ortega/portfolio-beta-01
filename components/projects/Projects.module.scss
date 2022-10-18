@@ -2,9 +2,9 @@
 
 .Projects {
   // background-color: var(--page-bgcolor);
-  height: 80vh;
+  height: 85vh;
   width: 100%;
-  margin-block: auto;
+  // margin-block: auto;
   padding: 1rem;
 
   font-family: var(--primary-text);
@@ -23,11 +23,9 @@
     gap: 1rem;
   }
 
-  @include media-query(junior) {
-    height: 100vh;
-  }
-
   @include media-query(tablet) {
+    height: 100vh;
+
     ul {
       background-color: aqua;
       width: fit-content;
